@@ -20,6 +20,19 @@
   
       .option {
         padding: 10px 15px;
+
+        &::after{
+          content: '';
+          display: block;
+          height: 2px;
+          width: 0;
+          background-color: black;
+          transition: width 0.3s ease-in-out;
+        }
+
+        &:hover::after{
+          width: 100%;
+        }
       }
     }
   }
