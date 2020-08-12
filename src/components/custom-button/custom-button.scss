@@ -1,6 +1,6 @@
 .custom-button {
     min-width: 165px;
-    width: auto;
+    width: max-content;
     height: 50px;
     letter-spacing: 0.5px;
     line-height: 50px;
@@ -17,8 +17,19 @@
 
     &:hover,
     &:focus {
-      box-shadow: inset 165px 0 0 0 black;
+      box-shadow: inset 300px 0 0 0 black;
       color: #fff;
     }
-  }
+
+    &.google-sign-in{
+      background-color: #4285f4;
+      color: #fff;
+      width: 100%;
+
+      &:hover{
+        background-color: #357ae8;
+        border: none;
+      }
+    }
+}
   
