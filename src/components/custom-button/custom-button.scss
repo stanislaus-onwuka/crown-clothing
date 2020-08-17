@@ -9,6 +9,8 @@
     color: black;
     text-transform: uppercase;
     background: none;
+    background-size: 200% 100%;
+    background-position: left top;
     font-family: 'Open Sans Condensed';
     font-weight: bolder;
     border: 1px solid black;
@@ -17,18 +19,19 @@
 
     &:hover,
     &:focus {
-      box-shadow: inset 300px 0 0 0 black;
+      background-position: right bottom;
       color: #fff;
     }
 
     &.google-sign-in{
-      background-color: #4285f4;
-      color: #fff;
-      width: 100%;
+      background: none;
+      background-size: 200% 100%;
+      background-position: right bottom;
 
       &:hover{
         background-color: #357ae8;
         border: none;
+        background-position: left top;
       }
     }
 }
